@@ -1,9 +1,11 @@
 import React from 'react';
-import { storiesOf, action } from '@kadira/storybook';
 import Cards, { Card } from '../src/index'
 import './style.css'
 
 const data = ['Alexandre', 'Thomas', 'Lucien']
+import { storiesOf } from '@storybook/react';
+import { action } from '@storybook/addon-actions';
+import { linkTo } from '@storybook/addon-links';
 
 const CustomAlertLeft = () => <span>Nop</span>
 const CustomAlertRight = () => <span>Ok</span>
